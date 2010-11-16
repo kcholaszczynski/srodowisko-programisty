@@ -1,3 +1,0 @@
-#/bin/bash
-echo Czy user $1 jest zalogowany?
-who | grep $1  | wc -l | sed -e 's/0/Nie jest zalogowany/' | sed -e 's/[1-9][0-9]*/Jest zalogowany/'
