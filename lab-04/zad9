@@ -1,0 +1,6 @@
+du --max-depth=1 < pokazuje wage oraz nazwy katalogów zarowno tych do 
+ktorych mamy 
+dostep, jak i do tych dla nas niedostępnych z błędami.
+
+du --max-depth=1 2> /dev/null < pokazuje wage katalogów i nazwe z tym, 
+że nie pokazuje nam błędów, które przekierowywuje do dev/null

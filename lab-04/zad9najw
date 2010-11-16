@@ -1,0 +1,6 @@
+#bin/bash 
+
+cd /etc
+
+zmienna=`du --max-depth=1 2> /dev/null | sort -n | tail -2 | head -1`                    
+echo "$zmienna"

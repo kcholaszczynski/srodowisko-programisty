@@ -1,0 +1,10 @@
+#bin/bash
+
+echo Podaj tekst do testowania:
+read tekst
+echo Podaj wyrazenie regularne:
+read reg
+echo Podaj tekst zastepujacy:
+read repl
+
+echo Wynik: `echo $tekst  | sed -e "s/$reg/$repl/"`
