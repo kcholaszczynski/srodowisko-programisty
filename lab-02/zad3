@@ -1,0 +1,13 @@
+#!/bin/bash
+
+system=`uname -a | cut -c 1-28 | sed 's/ sigma//'`
+processor=`uname -a | cut -c 71-118 | tr '_' ' '`
+totalmem=`free -g | grep Mem | cut -c 17-19`
+usedmem=`free -g | grep Mem | cut -c 28-30`
+harddisk=`df -hT | grep 10.8.0.1:/home | cut -c 29-33`
+
+echo Processor: $processor
+echo Memory: $usedmem/$totalmem GB
+echo Free disk space on root: $harddisk
+echo System: $system
+
