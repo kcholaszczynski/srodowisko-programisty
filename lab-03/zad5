@@ -1,0 +1,10 @@
+#/bin/bash
+
+echo -n Username: 
+read user
+echo -n Data: 
+read data
+
+zmienna=`last "$user" | grep "$data" | wc -l`
+ 
+echo -n Uzytkownik $user zalogowal sie $zmienna razy dnia $data
