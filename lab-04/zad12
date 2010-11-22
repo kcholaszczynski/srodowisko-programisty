@@ -1,0 +1,16 @@
+#!/bin/bash
+
+liczba=`python -c "import random; print random.randrange(1,50);"`
+
+echo "Wylosowana liczba to $liczba"
+
+echo  "Podaj przykladowa liczbe"
+read liczba2
+
+if [ "$liczba" -gt "$liczba2" ]; then
+echo "Podana liczba jest za mala"
+elif [ "$liczba" -lt "$liczba2" ]; then
+echo "Podana liczba jest za duza"
+else
+echo "Wpisales wlasciwa liczbe!"
+fi
