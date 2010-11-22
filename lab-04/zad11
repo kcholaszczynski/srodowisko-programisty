@@ -1,0 +1,10 @@
+#!/bin/bash
+
+echo -n "W ktorym roku byla bitwa pod Grunwaldem?"
+read data
+
+if [ "$data" = '1410' ] ; then
+echo "To poprawna odpowiedz!"
+else 
+echo "Nie wstyd Ci?"
+fi
