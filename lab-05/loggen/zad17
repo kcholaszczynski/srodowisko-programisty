@@ -1,0 +1,6 @@
+#!/bin/bash
+
+echo "Ilu uzytkownikow?"
+read user
+
+./genlogs.sh $user | sed -e "s/.*ACTION: //"
