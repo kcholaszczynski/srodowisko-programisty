@@ -1,0 +1,11 @@
+ 1. plik, które maj± ustawione prawo do zapisu dla wszystkich (opcja 
+-perm) find ~ -type f -perm -a+w
+   2. pliki, do których uzyskiwano dostêp dawniej ni¿ tydzieñ temu 
+(opcja -atime) find ~ -type f -atime +7
+   3. pliki wiêksze ni¿ 100 kilobajtów (opcja -size) find ~ -type f 
+-size +100k
+   4. pliki puste,find ~ -type f -size 0c
+   5. pliki nieu¿ywane przez miesi±c (niech miesi±c = 30 dni), które 
+maj± wiêcej ni¿ 500 kilobajtów.
+
+find ~ -type f -used 30 -size +512k
