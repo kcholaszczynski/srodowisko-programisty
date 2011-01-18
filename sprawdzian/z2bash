@@ -1,0 +1,5 @@
+#!/bin/bash
+
+echo -n "Najwięcej mejli otrzymał:"
+
+./zad2 | sed -e "s/.*to: //" 
